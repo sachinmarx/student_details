@@ -30,6 +30,7 @@ const FormAndTable = () => {
 
   return (
     <div>
+      <p className="text-2xl font-bold text-red-600">Sachin Marx</p>
       <img src={helloImage} alt="Hello" />
       <form onSubmit={handleSubmit(Submit)}>
         <div className="col-4 m-2">
@@ -98,7 +99,7 @@ const FormAndTable = () => {
         </div>
         <br />
         <button className="btn btn-dark m-2 col-1" type="submit">
-          Add
+          Click
         </button>
       </form>
       <br />
