@@ -31,7 +31,7 @@ const FormAndTable = () => {
   return (
     <div>
       <p className="text-2xl font-bold text-red-600">Sachin Marx</p>
-      <img src={helloImage} alt="Hello" />
+      <img className="rounded-full w-20" src={helloImage} alt="Hello" />
       <form onSubmit={handleSubmit(Submit)}>
         <div className="col-4 m-2">
           <input
