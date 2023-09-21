@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import { useForm } from "react-hook-form";
+import helloImage from "./Hello.svg";
 const FormAndTable = () => {
   const {
     register,
@@ -10,7 +11,7 @@ const FormAndTable = () => {
   const [formData, setFormData] = useState({
     name: "",
     age: "",
-    
+
     class: "",
     percentage: "",
     dob: "",
@@ -29,6 +30,7 @@ const FormAndTable = () => {
 
   return (
     <div>
+      <img src={helloImage} alt="Hello" />
       <form onSubmit={handleSubmit(Submit)}>
         <div className="col-4 m-2">
           <input
